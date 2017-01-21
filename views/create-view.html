@@ -1,0 +1,33 @@
+<div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br/>
+                <h1>Take new survey</h1>
+                <div class="post-preview">
+                   <form ng-submit="currentsurveys.createPost()">
+                       
+                       <input placeholder="Title of survey" type="text" name="heading" ng-model="currentsurveys.surveyTitle " required=""><br/><br/>
+                       <input placeholder="Sub Heading of Survey" type="text" name="surveySubTitle" ng-model="currentsurveys.surveySubTitle " required=""><br/><br/>
+                       <input placeholder="instructions" type="text" name="instructions" ng-model="currentsurveys.instructions" required=""><br/><br/>
+                      
+                       <textarea rows="4" cols="50" ng-model="currentsurveys.bodyHtml" required="">
+                            
+                       </textarea>
+                       <br/><br/>
+                       <input type="submit" value="Create Survey">
+
+
+
+                   </form>
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#/">Back to Home &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+</div>
